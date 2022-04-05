@@ -31,6 +31,30 @@ ul>li>a{
 ul>:nth-child(6){
     margin-left: auto;
 }
+#navbar {
+    background-color: #8860d0;
+    position: fixed;
+    top: -50px; 
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 100;
+  }
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
 .lk1{
     width: 80%;
     margin: 0 auto;
@@ -69,30 +93,6 @@ ul>:nth-child(6){
 }
 #ip>div:hover{
     transform: scale(1.1); 
-}
-#navbar {
-    background-color: #8860d0;
-    position: fixed;
-    top: -50px; 
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-    z-index: 100;
-  }
-  
-#navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
 }
 footer{
     width: 100%;

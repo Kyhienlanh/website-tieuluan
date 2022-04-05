@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG KÍ</title>
+    <link rel="stylesheet" href="dangki.css">
+    <script lang="JavaScript">
+        function KiemTraThongTin (){
+            var hoTen = document.getElementById("ho");
+            if(hoTen.value==""){
+                alert("Vui lòng nhập Họ tên.");
+                hoten.focus();
+                return true;
+            }
+            var nam=document.getElementById("ten");
+            if(nam.value==""){
+                alert("Hãy điền tên.");
+                nam.focus();
+                return fasle;
+            }
+            var a=document.getElementById("email");
+            if(a.value==""){
+                alert("Hãy điền email.");
+                a.focus();
+                return fasle;
+            }
+            var b=document.getElementById("matkhau");
+            if(b.value==""){
+                alert("Hãy điền mật khẩu.");
+                b.focus();
+                return fasle;
+            }
+            alert("Đăng ký thành công! Xin chúc mừng.");
+            return true;
+        }
+    </script>
+</head>
+<body>
+   
+    <div id="navbar">
+        <ul>
+            <li><a href="trangchu.html">TRANG CHỦ</a></li>
+            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+            <li><a href="laptop.html">LAPTOP</a></li>
+            <li><a href="dongho.html">ĐỒNG HỒ</a></li>
+            <li><a href="dienthoai.html">SMARTPHONE</a></li>
+            <li><a href="dangki.html">ĐĂNG KÍ</a></li>
+            <LI><a href="dangnhap.html">ĐĂNG NHẬP</a></LI>
+        </ul>
+    </div>
+    <div class='container'>
+        <div class='signup'>
+            <form onsubmit="  KiemTraThongTin()">
+             <input type='text' placeholder="Họ:" id="ho" name="txtHo"/>
+             <input type='text' placeholder="Tên:"  id="ten" name="txtTen"/>
+             <input type='text' placeholder='Email:'  id="email" name="txtEmail"/>
+             <input type='text' placeholder="Mật khẩu:"  id="matkhau" name="txtMatKhau" />
+             <input type='submit' placeholder='SUBMIT' />
+           </form>
+        </div>
+        <iframe id="video"  width="630" height="315" src="https://www.youtube.com/embed/IKdcqoYaQYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    
+    display: flex;
+   padding-left: 10px;
+}
+ul li{
+    border-radius: 20px;
+    border: 2px solid rgb(185, 160, 160);
+}
+ul >li>a:hover{
+    border-radius: 20px;
+    border: 2px solid lightblue;
+    background-color: lightblue;
+}
+ul>li>a{
+    text-decoration: none;
+    display: block;
+    min-width: 120px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+ul>:nth-child(6){
+    margin-left: auto;
+}
+#navbar {
+    background-color: #8860d0;
+    position: fixed;
+    top: -50px; 
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.tieude{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+    animation: doimauchu ease 2s infinite;
+}
+@keyframes doimauchu {
+    from {color:black;}
+    to {color:rgb(130, 184, 23);}
+}
+#laptopgaming{
+    width: 80%;
+    margin: 0 auto;
+    
+    
+}
+#laptopgaming>div{
+    width: 24%;
+    height: 400px;
+    border: 2px solid black;
+    margin-left: 10px;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    background-color:rgb(247, 238, 238);
+}
+
+#laptopgaming>div>img{
+    width: 70%;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+#laptopgaming>div:hover{
+    transform: scale(1.1); 
+}

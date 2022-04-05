@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="dangnhap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script lang="JavaScript">
+        function KiemTraThongTin (){
+          
+            var a=document.getElementById("email");
+            if(a.value==""){
+                alert("Hãy điền tên đăng nhập.");
+                a.focus();
+                return fasle;
+            }
+            var b=document.getElementById("matkhau");
+            if(b.value==""){
+                alert("Hãy điền mật khẩu.");
+                b.focus();
+                return fasle;
+            }
+            alert("Đăng nhập thành công.");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    
+    <div id="navbar">
+        <ul>
+            <li><a href="trangchu.html">TRANG CHỦ</a></li>
+            <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+            <li><a href="laptop.html">LAPTOP</a></li>
+            <li><a href="dongho.html">ĐỒNG HỒ</a></li>
+            <li><a href="dienthoai.html">SMARTPHONE</a></li>
+            
+            <li><a href="dangki.html">ĐĂNG KÍ</a></li>
+            <LI><a href="dangnhap.html">ĐĂNG NHẬP</a></LI>
+        </ul>
+    </div>
+    
+    <div id="wrapper">
+        <form action="" id="form-login" onsubmit="  KiemTraThongTin()">
+            <h1 class="form-heading">Form đăng nhập</h1>
+            <div class="form-group">
+                <i class="far fa-user"></i>
+                <input type="text" class="form-input" placeholder="Tên đăng nhập" id="email">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input" placeholder="Mật khẩu" id="matkhau">
+                <div id="eye">
+                    <i class="far fa-eye"></i>
+                </div>
+            </div>
+            <input type="submit" value="Đăng nhập" class="form-submit">
+        </form>
+    </div>
+</body>
+</html>
